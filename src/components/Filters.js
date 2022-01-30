@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useFilterContext } from "../context/filter_context";
 import { getUniqueValues, formatPrice } from "../utils/helpers";
-import { FaCheck, FaTimes } from "react-icons/fa";
+import { FaCheck} from "react-icons/fa";
 
 const Filters = () => {
   const {
@@ -58,7 +58,7 @@ const Filters = () => {
                     name="category"
                     type="button"
                     className={`${
-                      category == c.toLowerCase() ? "active" : null
+                      category === c.toLowerCase() ? "active" : null
                     }`}
                   >
                     {c}
@@ -87,7 +87,7 @@ const Filters = () => {
             <h5>colors</h5>
             <div className="colors">
               {colors.map((c, index) => {
-                if (c == "all") {
+                if (c === "all") {
                   return (
                     <button
                       key={index}

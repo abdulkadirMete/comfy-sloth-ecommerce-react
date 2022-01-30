@@ -50,20 +50,20 @@ export const FilterProvider = ({ children }) => {
     let name = e.target.name;
     let value = e.target.value;
 
-    if (name == "category") {
+    if (name === "category") {
       value = e.target.textContent;
     }
 
-    if (name == "price") {
+    if (name === "price") {
       value = Number(value);
       console.log(value)
     } 
 
-    if (name == "shipping") {
+    if (name === "shipping") {
       value = e.target.checked;
     }
 
-    if (name == "color") {
+    if (name === "color") {
       value = e.target.getAttribute("data-color");
     }
 

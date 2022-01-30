@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { useFilterContext } from "../context/filter_context";
 import { BsFillGridFill, BsList } from "react-icons/bs";
 import styled from "styled-components";
@@ -15,7 +14,6 @@ const Sort = () => {
 
   return (
     <Wrapper>
-      {" "}
       <div className="btn-container">
         <button
           type="button"
